@@ -91,7 +91,8 @@
         Table#it.caption
         #v(fontsize, weak: true)
         #it.body
-      ]
+      ]   
+      
     ] else [
       ...
     ]

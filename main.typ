@@ -106,6 +106,20 @@ To simplify the problem and make it convenient for us to simulate real-life cond
 // \end{tabular}
 // \end{center}
 
+#figure(
+  table(
+  columns: (2fr, 5fr, 2fr),
+  inset: 3pt,
+  stroke:none,
+  align: (center,left,center),
+  [*Symbol*], [*Description*], [*Unit*],
+  [$h$],[Convection heat transfer coefficient],[$W"/"(m^2 dot K )$],
+  [$k$],[Thermal conductivity],[$W"/"(m dot K )$],
+  [$M,m$],[Mass],[$"kg"$],
+  ),
+  caption: none,
+)<tab1>\
+
 where we define the main parameters while specific value of those parameters will be given later.
 
 = Model Overview
@@ -187,30 +201,27 @@ In the basis of this, we introduce the following equations \cite{5}:
 
 - *Continuity equation:*
 
-// \begin{equation} \label{eq1}
-// \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} +\frac{\partial w}{\partial z} =0
-// \end{equation}
+$
+rho c_p ( u (diff t)/ (diff x) + u (diff t)/ (diff y) + u (diff t)/ (diff z)) = 
+lambda ( (diff^2 t)/ (diff x^2) + (diff^2 t)/ (diff y^2) + (diff^2 t)/ (diff z^2))
+$<eq1>
 
 where the first component is the change of fluid mass along the $X$-ray. The second component is the change of fluid mass along the $Y$-ray. And the third component is the change of fluid mass along the $Z$-ray. The sum of the change in mass along those three directions is zero.
 
 
 - *Moment differential equation (N-S equations):*
 
-// \begin{equation} \label{eq2}
-// \left\{
-// \begin{array}{l} \!\!
-// \rho \Big(u \dfrac{\partial u}{\partial x} + v \dfrac{\partial u}{\partial y} + w\dfrac{\partial u}{\partial z} \Big) = -\dfrac{\partial p}{\partial x} + \eta \Big(\dfrac{\partial^2 u}{\partial x^2} + \dfrac{\partial^2 u}{\partial y^2} + \dfrac{\partial^2 u}{\partial z^2} \Big) \\[0.3cm]
-// \rho \Big(u \dfrac{\partial v}{\partial x} + v \dfrac{\partial v}{\partial y} + w\dfrac{\partial v}{\partial z} \Big) = -\dfrac{\partial p}{\partial y} + \eta \Big(\dfrac{\partial^2 v}{\partial x^2} + \dfrac{\partial^2 v}{\partial y^2} + \dfrac{\partial^2 v}{\partial z^2} \Big) \\[0.3cm]
-// \rho \Big(u \dfrac{\partial w}{\partial x} + v \dfrac{\partial w}{\partial y} + w\dfrac{\partial w}{\partial z} \Big) = -g-\dfrac{\partial p}{\partial z} + \eta \Big(\dfrac{\partial^2 w}{\partial x^2} + \dfrac{\partial^2 w}{\partial y^2} + \dfrac{\partial^2 w}{\partial z^2} \Big)  
-// \end{array}
-// \right.
-// \end{equation}
+$
+rho c_p ( u (diff t)/ (diff x) + u (diff t)/ (diff y) + u (diff t)/ (diff z)) = 
+lambda ( (diff^2 t)/ (diff x^2) + (diff^2 t)/ (diff y^2) + (diff^2 t)/ (diff z^2))
+$<eq2>
 
 
 - *Energy differential equation*
 
 $
-// rho*c_p*u*partial t/ partial x
+rho c_p ( u (diff t)/ (diff x) + u (diff t)/ (diff y) + u (diff t)/ (diff z)) = 
+lambda ( (diff^2 t)/ (diff x^2) + (diff^2 t)/ (diff y^2) + (diff^2 t)/ (diff z^2))
 $<eq3>
 
 where the left three components are convection terms while the right three components are conduction terms.
