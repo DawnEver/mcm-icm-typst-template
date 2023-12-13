@@ -80,6 +80,7 @@
   show figure: it => {
     set text(fontsize)
     set align(center)
+    let has_caption = it.caption != none
     if it.kind == image [
       #box[
         #it.body
@@ -88,7 +89,10 @@
       ]
     ] else if it.kind == table [
       #box[
-        Table#it.caption
+        #if has_caption{
+        text("Table")
+        it.caption
+        }
         #v(fontsize, weak: true)
         #it.body
       ]   
