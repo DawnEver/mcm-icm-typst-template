@@ -26,7 +26,7 @@ Typst is a new markup-based typesetting system that is designed to be as powerfu
 ## Usage:
 Run `typst compile main.typ` to obtain main.pdf
 
-You can try it online ([Click Me](https://typst.app/project/rgsg7a58qn3fKa7jPhbl2U)) or run locally.
+You can try it online ([Click Me](https://typst.app/project/pxdKIC-xO_H20K5NAg_9sm)) or run locally.
 I strongly recommand writing with VSCode. 
 ![vscode_preview](img/vscode_preview.png)
 
