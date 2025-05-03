@@ -18,7 +18,6 @@
   )[
     In addition, your report must include a letter to the Chief Financial Officer(CFO) of the Goodgrant Foundation, Mr. Alpha Chiang, that describes the optimal investment strategy, your modeling approach and major results, and a brief discussion of your proposed concept of a return-on-investment (ROI). This letter
     should be no more than two pages in length.
-
     Here are simulation programmes we used in our model as follow.
   ]
   pad(left: -first-line-indent)[#line(length: 100%, stroke: gray)]

@@ -160,7 +160,7 @@
       #text(team-number)
       #h(1fr)
       #text("Page")
-      #page_counter.display("1 of 1", both: true)
+      #context(page_counter.display("1 of 1", both: true))
     ]],
     header-ascent: 20%,
     margin: (left: 80pt, right: 50pt, top: 60pt, bottom: 40pt),
