@@ -202,8 +202,8 @@ In the basis of this, we introduce the following equations \cite{5}:
 - *Continuity equation:*
 
 $
-rho c_p ( u (diff t)/ (diff x) + u (diff t)/ (diff y) + u (diff t)/ (diff z)) = 
-lambda ( (diff^2 t)/ (diff x^2) + (diff^2 t)/ (diff y^2) + (diff^2 t)/ (diff z^2))
+rho c_p ( u (partial t)/ (partial x) + u (partial t)/ (partial y) + u (partial t)/ (partial z)) = 
+lambda ( (partial^2 t)/ (partial x^2) + (partial^2 t)/ (partial y^2) + (partial^2 t)/ (partial z^2))
 $<eq1>
 
 where the first component is the change of fluid mass along the $X$-ray. The second component is the change of fluid mass along the $Y$-ray. And the third component is the change of fluid mass along the $Z$-ray. The sum of the change in mass along those three directions is zero.
@@ -212,16 +212,16 @@ where the first component is the change of fluid mass along the $X$-ray. The sec
 - *Moment differential equation (N-S equations):*
 
 $
-rho c_p ( u (diff t)/ (diff x) + u (diff t)/ (diff y) + u (diff t)/ (diff z)) = 
-lambda ( (diff^2 t)/ (diff x^2) + (diff^2 t)/ (diff y^2) + (diff^2 t)/ (diff z^2))
+rho c_p ( u (partial t)/ (partial x) + u (partial t)/ (partial y) + u (partial t)/ (partial z)) = 
+lambda ( (partial^2 t)/ (partial x^2) + (partial^2 t)/ (partial y^2) + (partial^2 t)/ (partial z^2))
 $<eq2>
 
 
 - *Energy differential equation*
 
 $
-rho c_p ( u (diff t)/ (diff x) + u (diff t)/ (diff y) + u (diff t)/ (diff z)) = 
-lambda ( (diff^2 t)/ (diff x^2) + (diff^2 t)/ (diff y^2) + (diff^2 t)/ (diff z^2))
+rho c_p ( u (partial t)/ (partial x) + u (partial t)/ (partial y) + u (partial t)/ (partial z)) = 
+lambda ( (partial^2 t)/ (partial x^2) + (partial^2 t)/ (partial y^2) + (partial^2 t)/ (partial z^2))
 $<eq3>
 
 where the left three components are convection terms while the right three components are conduction terms.
